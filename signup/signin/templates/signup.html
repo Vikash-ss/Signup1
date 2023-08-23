@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+</head>
+<body>
+    <h1>signup</h1>
+    <form method="post" action="{{ url_for('signup') }}">
+
+        <label>Account Type:</label>
+        <input type="radio" name="account_type" value="personal"> Personal
+        <input type="radio" name="account_type" value="work"> Work<br><br>
+
+        <label>First Name:</label>
+        <input type="text" name="first_name"><br><br>
+
+        <label>Middle Name:</label>
+        <input type="text" name="middle_name"><br><br>
+
+        <label>Last Name:</label>
+        <input type="text" name="last_name"><br><br>
+
+        <label>Date of Birth:</label>
+        <input type="text" name="dob_month" placeholder="Month">
+        <input type="text" name="dob_year" placeholder="Year"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label>Profile Name:</label>
+        <input type="text" name="profile_name"><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password"><br><br>
+
+        <label>Phone Number:</label>
+        <input type="text" name="phone_number"><br><br>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
